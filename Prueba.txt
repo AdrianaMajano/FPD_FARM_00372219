@@ -1,0 +1,62 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+//No recuerdo si este codigo lo hice a mano de nuevo o lo copie y pegue (Copiar y pegar no es de internet es de mi codigo original pues tengo problemas con el visual y crei que estaba malo y lo copie y pegue en c++ en linea y si estaba bien pues corria pero aca no corria sinembargo lo solucione) le pregunte a la instructora e instructor hasta que ya corrio como debia 
+
+ int main () {
+
+  // a continuacion eclaro mis variables 
+  //la libreia siempre  es importante dependeindo las variables a usar 
+
+  int cantidad,n,contador = 0;
+
+// un int para numeros enteros 
+  printf("la cantidad de la muestra es:");
+  scanf("%d", &cantidad);
+
+
+// la nueva funcion de arreglos para x camtidad de numeros enteros
+int array[cantidad];
+
+// esta funcion srand para declarar numeros enteros e iniciar con el proceso de aleatorios declaramos un for para ciclos de enteros y luego un array jnto aun rand el cual declara la serie de numeros aleatorios del tipo enteros 
+  srand(time(NULL));
+
+    
+    for(int i = 0; i < cantidad; i++){
+
+        array[i] = rand() % 10 + 1;
+
+        printf("%d ", array[i]);
+    }
+  
+   //Imprimo el mensaje que vera el usuario en pantalla  luego otro for mas un if de condiciona en los arreglos si el numero se repite x veces lo dice si no se repite termina o da cero
+  
+    printf("numero que desea ver la cantidad de repeticiones: ");
+scanf("%d", &n);
+
+
+
+for(int i = 0; i < cantidad;i++){
+if(array[i] == n){
+contador++;
+
+
+}
+
+
+    
+
+  }
+
+printf("Repeticiones:%d", contador);
+
+
+  return 0;
+
+
+
+ }  
+
+
+//Fatima Adriana Rodriguez Majano 
+//00372219
