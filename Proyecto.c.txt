@@ -1,0 +1,43 @@
+#include<stdlib.h>
+#include<time.h>
+#include<stdio.h>
+#include<conio.h>
+
+int main () {
+
+Niveles();
+
+
+   void Niveles();
+   void Escoger__Nivel (int opc);
+   void Esquema_ahorcado (int Intentos);
+   void Empezarjuego (char palabras [][20], char Nombre[]);
+
+
+
+}
+
+void Niveles(){
+int opc,nombre;
+
+printf("Ingrese su alias:");
+scanf("%d", &nombre);
+
+printf("*JUEGO EL AHORCADO* \n\n");
+
+printf("Niveles\n\n");
+printf("1.Nivel Facil\n" );
+printf("2.Nivel Medio\n");
+printf("3.Nivel Dificil\n");
+printf("Nivel a elegir es:");
+scanf("%d", &opc);
+while(opc<1 || opc>3);
+
+
+if (opc == 1) Escoger_Nivel (opc);
+if (opc == 2) Escoger_Nivel (opc);
+if (opc == 3) Escoger_Nivel (opc);
+
+}
+
+
